@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C_Transaction</title>
+    <link rel="icon" href="">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+      <section>
+        <div class="container">
+          <h1  data-aos="fade-down" class="righteous-regular text-center pt-5">
+            <i class="fa-solid fa-bookmark"></i>
+            CustomerTransactions
+            <i class="fa-solid fa-bookmark"></i>
+          </h1>
+
+          <div class="row py-5">
+            <div class="col-md-6">
+              <label  data-aos="fade-right" for="searchByName" class="inp">
+                <input type="text" id="searchByName" placeholder="&nbsp;">
+                <span class="label">Search By Name</span>
+                <span class="focus-bg"></span>
+              </label>
+            </div>
+            <div class="col-md-6">
+              <label data-aos="fade-left" for="searchByAmount" class="inp">
+                <input id="searchByAmount" type="number" placeholder="&nbsp;">
+                <span class="label">searchByAmount</span>
+                <span class="focus-bg"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="tbl-header">
+            <table cellpadding="0" cellspacing="0" class="border-0">
+              <thead>
+                <tr>
+                    <th >Customer ID</th>
+                    <th >Customer Name</th>
+                    <th >Date</th>
+                    <th >Amount</th>
+                    <th >View Transaction</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="tbl-content">
+            <table cellpadding="0" cellspacing="0" class="border-0">
+              <tbody id="tbody">
+                <tr>
+              
+                </tr> 
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      
+<!-- 
+        <figure class="highcharts-figure">
+          <div id="container"></div>
+      </figure> -->
+ 
+
+
+      <div id="charts" class="container py-5">
+        <div class="row">
+          <div class="col-md-6">
+            <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+          </div>
+          <div class="col-md-6">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      </main>
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
